@@ -4,6 +4,11 @@ import "../styles.scss";
 import GithubKitty from "../images/github.svg";
 import Android from "../images/android.svg";
 
+/**
+ * This is the new game view.
+ * Users are able to select a character(I really should have named it enemy but oh well...) and
+ * start the game.
+ */
 class NewGame extends Component {
     constructor(props) {
         super(props);
@@ -13,6 +18,11 @@ class NewGame extends Component {
         };
     }
 
+    /**
+     * Logic to give user a visual representation of selecting a character they picked.
+     * It sets a specific class name to the element.
+     * @param {string} characterType - selected character
+     */
     highlightCharacter(characterType) {
         var githubClassName = "";
         var androidClassName = "";

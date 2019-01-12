@@ -1,3 +1,7 @@
+/**
+ * Constants for values that gets used anc checked frequently.
+ * Overkill for such a small app? Maybe. Maybe not.
+ */
 const CONST = {
     CHARACTER: {
         GITHUB: "Kitty Zombie",

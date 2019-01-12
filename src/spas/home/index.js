@@ -6,6 +6,9 @@ import "./home.font";
 import NewGame from "./components/NewGame";
 import PlayGame from "./components/PlayGame";
 
+/**
+ * Top level component for the app.
+ */
 class HomeSPA extends Component {
     constructor() {
         super();
@@ -17,11 +20,19 @@ class HomeSPA extends Component {
         };
     }
 
+    /**
+     * Updates the state with the selected character.
+     * @param {string} characterType - Selected character type.
+     */
     selectCharacter(characterType) {
         let selectedCharacter = characterType;
         this.setState({ selectedCharacter });
     }
 
+    /**
+     * Changes and updates the state of the game.
+     * @param {string} gameState - game state type such as "New Game" and "Game in progress"
+     */
     changeGameState(gameState) {
         let { game } = this.state;
         game.state = gameState;
@@ -31,6 +42,7 @@ class HomeSPA extends Component {
     render() {
         let view;
 
+        // depending on the state of the game, it renders appropriate view.
         switch (this.state.game.state) {
             case CONST.GAME_STATE.IN_PROGRESS:
                 view = (

@@ -2,6 +2,11 @@ import React from "react";
 import "../home.font";
 import "../styles.scss";
 
+/**
+ * Winner UI.
+ * I thought I use this page to express what type of beer I personally like
+ * as well as leave a short thank you note. Thanks!
+ */
 const GameWon = props => {
     return (
         <div className="gamewon-container text-green text-center">
