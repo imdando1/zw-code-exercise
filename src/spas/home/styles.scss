@@ -1,6 +1,56 @@
 /* PUT STYLES HERE */
 
-svg {
-    width: 100px;
-    height: 100px;
+html,
+body,
+#react-spa {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .character-container,
+    .playgame-container {
+        position: relative;
+    }
+
+    .newgame-container {
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .gamewon-container {
+        position: relative;
+    }
+
+    .character {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.text-green {
+    color: green;
+}
+.text-center {
+    text-align: center;
+}
+
+.selection-box {
+    opacity: 0.5;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.crosshair-pointer {
+    &:hover {
+        cursor: crosshair;
+    }
+}
+
+.highlight-character {
+    border: 3px solid black;
+    opacity: 1;
 }
